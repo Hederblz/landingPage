@@ -1,0 +1,23 @@
+nav{
+    background-color: #02074c;
+}
+
+.conteudo{
+    padding-top: 30px; 
+    padding-bottom: 60px;
+}
+
+.midia{
+    width: 600px;
+    height:315px;
+}
+
+.link{
+    text-decoration: none; 
+    color: white;
+}
+
+.formulario{
+    padding-bottom: 30px; 
+    padding-top: 10px;
+}

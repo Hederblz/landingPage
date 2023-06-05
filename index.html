@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #02074c;">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo4.png" alt="logo" width="100" height="100" class="d-inline-block align-text-top">
@@ -34,7 +34,7 @@
                         <a class="nav-link" href="#assistir">Onde assistir</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a class="nav-link" href="#inscricao">Inscrição</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@
     <!-- fim navbar -->
     <br>
     <!-- primeiro conteudo -->
-      <div class="container" id="final" style="padding-top: 30px; padding-bottom: 60px;">
+      <div class="container conteudo" id="final">
         <div class="row">
           <div class="col-md-6">
             <h1><span>Manchester City vs Inter Milan</span></h1>
@@ -51,22 +51,22 @@
             <p>A emocionante final da UEFA Champions League entre Manchester City e Internazionale de Milão promete ser um confronto épico. Duas equipes repletas de talentos, buscando a glória europeia. Os corações dos torcedores aceleram, enquanto aguardam ansiosamente por esse duelo cheio de emoções e reviravoltas. Será uma batalha intensa até o último minuto, onde apenas uma equipe poderá erguer a taça de campeã. A expectativa é alta, e o mundo do futebol espera por uma final inesquecível.</p>
           </div>
           <div class="col-md-6">
-            <img src="img/final.avif" alt="Lago" class="img-fluid" style="width: 600px;">
+            <img src="img/final.avif" alt="Lago" class="img-fluid midia">
           </div>
         </div>
       </div>
       <!-- fim do conteudo -->
       <hr>
       <!-- segundo conteudo -->
-      <div class="container" id="assistir" style="padding-top: 30px; padding-bottom: 60px;">
+      <div class="container conteudo" id="assistir">
         <div class="row">
           <div class="col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gCEY28_BD6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="row"><iframe class="midia" src="https://www.youtube.com/embed/gCEY28_BD6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
           </div>
           <div class="col-md-6">
             <h1>Onde assistir</h1>
             <p>Não deixe de assistir à final da UEFA Champions League! Será um espetáculo incrível, com os melhores jogadores do futebol europeu em ação. Prepare-se para emoções intensas, lances surpreendentes e momentos que ficarão para a história. Não perca a oportunidade de vivenciar essa experiência única. Junte-se a nós e desfrute de uma partida repleta de talento, competitividade e paixão pelo futebol. Venha torcer, celebrar e se maravilhar com a grandeza do esporte. A final da Champions League está imperdível!</p>
-            <button class="btn btn-primary"><a href="https://www.hbomax.com/br/pt/collections/sports/champions-league" style="text-decoration: none; color: white;" target="_blank">Assista aqui!</a></button>
+            <button class="btn btn-primary"><a href="https://www.hbomax.com/br/pt/collections/sports/champions-league" class="link" target="_blank">Assista aqui!</a></button>
           </div>
         </div>
       </div>
@@ -74,11 +74,15 @@
       <hr>
       <!-- formulario -->
     <div class="container" >
-      <div class="row" style="padding-bottom: 60px; padding-top: 60px">
-        <h2 style="padding-bottom: 30px; padding-top: 30px" class="display-4" id="contato" >Contato</h2>
+      <div class="row formulario">
+        <h2 class="display-4" id="inscricao" >Inscreva-se</h2>
         <div class="col-md-6">
           <form onsubmit="mensagem();">
-            <div class="form-group" style="padding-bottom: 30px; padding-top: 30px">
+            <div class="form-group formulario">
+              <label for="emailInput">Nome:</label>
+              <input type="text" class="form-control" id="nomeInput" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group formulario">
               <label for="emailInput">E-mail:</label>
               <input type="email" class="form-control" id="emailInput" placeholder="Digite seu e-mail" required>
             </div>
@@ -88,31 +92,15 @@
       </div>
     </div>
     <!-- fim do formulario -->
-    <hr>
     <!-- rodape -->
-    <footer class="footer">
+    <footer class="bg-light text-center py-3">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="https://www.instagram.com/tntsportsbr/" target="_blank">
-                  <img src="./img/insta.png" alt="Instagram" width="30">
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/TNTSportsBR" target="_blank">
-                  <img src="./img/face.png" alt="Facebook" width="30">
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.youtube.com/tntsportsbr" target="_blank">
-                  <img src="./img/you.png"  alt="YouTube" width="30">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <p>Redes sociais:</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://www.instagram.com/tntsportsbr/"><img src="./img/insta.png" alt="Instagram" width="30"></a></li>
+          <li class="list-inline-item"><a href="https://www.facebook.com/TNTSportsBR"><img src="./img/face.png" alt="Facebook" width="30"></a></li>
+          <li class="list-inline-item"><a href="https://www.youtube.com/tntsportsbr"><img src="./img/you.png"  alt="YouTube" width="30"></a></li>
+        </ul>
       </div>
     </footer>
     <!-- fim do rodape -->
